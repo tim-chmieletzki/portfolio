@@ -8,9 +8,9 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      sm: "360px", // 360 x 800
-      md: "1024px", // 1024 x 1366
-      lg: "1440px", // 1440 x 1024
+      sm: "360px", // 360 x 800 M
+      md: "1024px", // 1024 x 1366 T
+      lg: "1440px", // 1440 x 1024 D
     },
     extend: {
       colors: {
