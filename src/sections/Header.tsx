@@ -7,7 +7,7 @@ const inter = Inter({
 export const Header = () => {
   return (
     <header
-      className={`${inter.className} tracking-tight flex flex-col mx-4 mt-4 text-sm leading-4`}
+      className={`${inter.className} tracking-tighter flex flex-col mx-4 mt-4 text-sm leading-4`}
     >
       <div className="flex justify-between items-center">
         <span className="text-textSec">TIM CHMIELETZKI</span>
