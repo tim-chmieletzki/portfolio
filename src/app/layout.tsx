@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Space_Grotesk } from "next/font/google";
 import "./global.css";
 
-const spaceGrotesk = localFont({
-  src: "./fonts/SpaceGrotesk-VariableFont_wght.ttf",
+const space_grotesk = Space_Grotesk({
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${spaceGrotesk.className} bg-background text-textPrim antialiased`}
+        className={`${space_grotesk.className} bg-background text-textPrim antialiased`}
       >
         {children}
       </body>
