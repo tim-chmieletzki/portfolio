@@ -7,20 +7,6 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: "16px",
-        md: "40px",
-        lg: "112px",
-      },
-
-      screens: {
-        sm: "360px",
-        md: "1024px",
-        lg: "1440px",
-      },
-    },
     screens: {
       sm: "360px", // 360 x 800
       md: "1024px", // 1024 x 1366
