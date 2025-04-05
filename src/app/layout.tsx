@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
-
+import localFont from "next/font/local";
 import "./global.css";
+
+const spaceGrotesk = localFont({
+  src: "./fonts/SpaceGrotesk-VariableFont_wght.ttf",
+});
 
 export const metadata: Metadata = {
   title: "Tim Chmieletzki",
@@ -16,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${GeistSans.className} bg-black text-white antialiased`}
+        className={`${spaceGrotesk.className} bg-background text-textPrim antialiased`}
       >
         {children}
       </body>

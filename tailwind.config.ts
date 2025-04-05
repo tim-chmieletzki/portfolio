@@ -16,15 +16,15 @@ const config: Config = {
       },
 
       screens: {
-        sm: "375px",
-        md: "768px",
-        lg: "1400px",
+        sm: "360px",
+        md: "1024px",
+        lg: "1440px",
       },
     },
     screens: {
-      sm: "375px",
-      md: "768px",
-      lg: "1400px",
+      sm: "360px", // 360 x 800
+      md: "1024px", // 1024 x 1366
+      lg: "1440px", // 1440 x 1024
     },
     extend: {
       colors: {
