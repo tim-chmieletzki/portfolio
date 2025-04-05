@@ -5,9 +5,11 @@ export const Header = () => {
         <span className="text-textSec">TIM CHMIELETZKI</span>
         <div className="h-5 w-5 rounded-full bg-accentPrim" />
       </div>
-      <div className="flex flex-col mt-4 gap-[2px]">
+      <div className="flex flex-col justify-start items-start mt-4 gap-[2px]">
         <h1>WIRTSCHAFTSINFORMATIKSTUDENT</h1>
-        <p>MV, DEUTSCHLAND</p>
+        <div className="flex items-center justify-start">
+          <span>MV, GERMANY</span>
+        </div>
       </div>
     </header>
   );
