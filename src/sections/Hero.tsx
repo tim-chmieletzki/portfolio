@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import { NameTag } from "@/components/NameTag";
 import { MoveLeft, Asterisk } from "lucide-react";
 
 export const Hero = () => {
@@ -43,9 +44,9 @@ export const Hero = () => {
   const constraintRef = useRef(null);
 
   return (
-    <section className="m-4">
+    <section>
       <div
-        className="relative border border-accentPrim h-80 font-spaceMono leading-5"
+        className="relative mx-4 border border-accentPrim h-80 font-spaceMono leading-5"
         ref={constraintRef}
       >
         {infos.map((info) => (
@@ -80,6 +81,7 @@ export const Hero = () => {
           );
         })}
       </div>
+      <NameTag />
     </section>
   );
 };
