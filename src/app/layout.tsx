@@ -1,7 +1,7 @@
+import "./global.css";
 import type { Metadata } from "next";
 import { twMerge } from "tailwind-merge";
 import { Space_Grotesk, Space_Mono, Inter } from "next/font/google";
-import "./global.css";
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
