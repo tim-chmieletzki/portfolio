@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { twMerge } from "tailwind-merge";
+import { Space_Grotesk, Space_Mono, Inter } from "next/font/google";
 import "./global.css";
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
+  variable: "--font-spaceGrotesk",
+});
+
+const space_mono = Space_Mono({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-spaceMono",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +32,12 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${space_grotesk.className} bg-background text-textPrim antialiased`}
+        className={twMerge(
+          space_grotesk.variable,
+          space_mono.variable,
+          inter.variable,
+          "bg-background text-textPrim antialiased"
+        )}
       >
         {children}
       </body>

@@ -1,22 +1,14 @@
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-});
-
 export const Header = () => {
   return (
-    <header
-      className={`${inter.className} tracking-tighter flex flex-col mx-4 mt-4 text-sm leading-4`}
-    >
+    <header className="flex flex-col mx-4 mt-4 font-inter text-sm leading-4 tracking-tighter">
       <div className="flex justify-between items-center">
         <span className="text-textSec">TIM CHMIELETZKI</span>
-        <div className="h-5 w-5 rounded-full bg-accentPrim" />
+        <div className="bg-accentPrim rounded-full w-5 h-5" />
       </div>
-      <div className="flex flex-col justify-start items-start mt-4 gap-[2px]">
+      <div className="flex flex-col justify-start items-start gap-[2px] mt-4">
         <h1>WIRTSCHAFTSINFORMATIKSTUDENT</h1>
-        <div className="flex items-center justify-start">
-          <span>MV, GERMANY</span>
+        <div className="flex justify-start items-center">
+          <span>MV, DEUTSCHLAND</span>
         </div>
       </div>
     </header>

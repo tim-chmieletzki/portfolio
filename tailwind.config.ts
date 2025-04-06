@@ -19,6 +19,11 @@ const config: Config = {
         textSec: "#999999",
         accentPrim: "#ED481D",
       },
+      fontFamily: {
+        spaceGrotesk: "var(--font-spaceGrotesk)",
+        spaceMono: "var(--font-spaceMono)",
+        inter: "var(--font-inter)",
+      },
     },
   },
   plugins: [],
