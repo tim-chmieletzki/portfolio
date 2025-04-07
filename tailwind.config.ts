@@ -14,10 +14,10 @@ const config: Config = {
     },
     extend: {
       colors: {
-        background: "#0F0F0F",
-        textPrim: "#E3E3E1",
-        textSec: "#999999",
-        accentPrim: "#ED481D",
+        background: "",
+        textPrim: "",
+        textSec: "",
+        accentPrim: "",
       },
       fontFamily: {
         spaceGrotesk: "var(--font-spaceGrotesk)",
