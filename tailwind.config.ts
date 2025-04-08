@@ -8,21 +8,22 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      sm: "360px", // 360 x 800 M
-      md: "1024px", // 1024 x 1366 T
-      lg: "1440px", // 1440 x 1024 D
+      sm: "375px", // 375 x 635 M
+      md: "768px", // 768 x 956 T
+      lg: "1200px", // 1200 x 900 D
     },
     extend: {
       colors: {
-        background: "",
-        textPrim: "",
+        background: "#000000",
+        foreground: "",
+        textPrim: "#FFFFFF",
         textSec: "",
         accentPrim: "",
       },
       fontFamily: {
         spaceGrotesk: "var(--font-spaceGrotesk)",
         spaceMono: "var(--font-spaceMono)",
-        inter: "var(--font-inter)",
+        interTight: "var(--font-interTight)",
       },
     },
   },
