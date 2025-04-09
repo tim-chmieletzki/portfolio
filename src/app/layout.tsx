@@ -1,20 +1,9 @@
 import "./global.css";
 import type { Metadata } from "next";
 import { twMerge } from "tailwind-merge";
-import { Space_Grotesk, Space_Mono, Inter_Tight } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const space_grotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-spaceGrotesk",
-});
-
-const space_mono = Space_Mono({
-  weight: ["400"],
-  subsets: ["latin"],
-  variable: "--font-spaceMono",
-});
-
-const interTight = Inter_Tight({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
@@ -33,9 +22,7 @@ export default function RootLayout({
     <html lang="de">
       <body
         className={twMerge(
-          space_grotesk.variable,
-          space_mono.variable,
-          interTight.variable,
+          inter.variable,
           "bg-background text-textPrim antialiased"
         )}
       >
