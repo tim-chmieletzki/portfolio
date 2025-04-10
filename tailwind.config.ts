@@ -14,16 +14,16 @@ const config: Config = {
     },
     extend: {
       colors: {
-        background: "#000000",
+        background: "",
         foreground: "",
-        textPrim: "#FFFFFF",
+        textPrim: "",
         textSec: "",
         accentPrim: "",
+        accentSec: "",
+        border: "",
       },
       fontFamily: {
-        spaceGrotesk: "var(--font-spaceGrotesk)",
-        spaceMono: "var(--font-spaceMono)",
-        interTight: "var(--font-interTight)",
+        inter: "var(--font-inter)",
       },
     },
   },
