@@ -1,12 +1,11 @@
 import "./global.css";
 import type { Metadata } from "next";
 import { twMerge } from "tailwind-merge";
-import { Inter } from "next/font/google";
-import {Archivo} from "next/font/google";
+import { Manrope } from "next/font/google";
 
-const archivo = Archivo({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-archivo",
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +22,7 @@ export default function RootLayout({
     <html lang="de">
       <body
         className={twMerge(
-          archivo.variable,
+          manrope.variable,
           "bg-background text-textPrim antialiased"
         )}
       >

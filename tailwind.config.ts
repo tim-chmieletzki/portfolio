@@ -24,7 +24,7 @@ const config: Config = {
         border: "",
       },
       fontFamily: {
-        archivo: "var(--font-archivo)",
+        manrope: "var(--font-manrope)",
       },
     },
   },
