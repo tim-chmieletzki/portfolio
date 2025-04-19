@@ -15,9 +15,9 @@ const config: Config = {
     },
     extend: {
       colors: {
-        background: "",
+        background: "#FFFFFF",
         foreground: "",
-        textPrim: "",
+        textPrim: "#000000",
         textSec: "",
         accentPrim: "",
         accentSec: "",
@@ -25,6 +25,7 @@ const config: Config = {
       },
       fontFamily: {
         manrope: "var(--font-manrope)",
+        bigShouldersDisplay: "var(--font-bigShouldersDisplay)",
       },
     },
   },
