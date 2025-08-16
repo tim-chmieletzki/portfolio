@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+:root {
+  --font-geist-mono: system-ui;
+}
+
+.mono {
+  font-family: var(--font-geist-mono);
+}
